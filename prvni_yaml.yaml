@@ -1,0 +1,38 @@
+openapi: 3.0.3
+info:
+  title: EXT-0_CSAS_CORP_DB_Multiple_Operations_v1
+  description: >
+    # Basic Information
+
+
+    This API is a HTTP-1.1 REST service that provides resources for creating and
+    editing standalone payment orders for Ceska Sporitelna corporate customers.
+    API is intended for developers of internet banking and other accounting
+    applications but still it is general purpose API with no single predefined
+    use in mind.
+
+
+    This API uses same principles, mechanisms and basic data types as defined in
+    CSAS guidelines for REST API. For more information see
+    https://erstegroup.sharepoint.com/:w:/s/CSASWebAPIServices/ETtdzdFjiGRKsH3-zaBUAXwBkK-cEiEfzfC5agJLw7dTOg.
+
+
+    ## Server Calls
+
+
+    Server calls are done via https by using one of the following HTTP methods:
+
+
+    | Method | Idempotent | Status change | Purpose |
+
+    | ------ |:----------:|:-------------:| ------- |
+
+    | GET    | &#10004;   | &#10006;      | __Select__: Read-only call. |
+
+    | POST   | &#10006;   | &#10004;      | __Create__: Add a new resource. |
+
+    | PUT    | &#10004;   | &#10004;      | __Update__: Change an existing
+    resource. |
+
+    | DELETE | &#10004;   | &#10004;      | __Delete__: Remove an existing
+    resource. |
